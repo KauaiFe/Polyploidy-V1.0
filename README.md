@@ -1,8 +1,3 @@
-# Polyploidy-V1.0
-
-Description of the software implementation used in the manuscript
-"Polyploid establishment and evolution: A neutral speciation model
-for the eco-evolutionary dynamics of mixed-ploidy systems"
 
 Authors: Felipe Kauai, Frederik Mortier, Silvija Milosavljevic, Yves Van de Peer, Dries Bonte
 
@@ -10,8 +5,7 @@ Ghent, Belgium, 2022
 
 Language: Java
 
-The implementation is provided. An example of a data set, extracted from
-a single run of the algorithm for counting the number of diploid and polyploid species, is provided.
+The implementation is provided.
 
 The source code include four classes: Main.java, EvoMethods.java, Population.java and SpTracker.java
 
@@ -54,3 +48,14 @@ This class contains all fundamental methods related to the evolutionary dynamics
 The constructor takes in 5 variables: meiosisCoeff, probPolyploid, mutationRate, matingRadius, reducedFertility.
 
 The class contains the following methods:
+
+computeSimilarity() /* Computes the genetic similarity between two genomes passed as arguments. Implements the heuristic HeuristicGS described in the main text. Returns a real number between 0 and 1 (>0.95 -> compatible mates).
+meiosis() /* Executes meiosis. Verifies whether the genome is diploid or tetraploid and produces gametes accordingly. Gametes are imediately subject to mutation upon formation. Abnormal gametes are just null*.
+findMates() /*Returns the set of potential partners given matingRadius.
+mutation() /* Mutates gametes given mutationRate
+buildAdjMatrix() /* Takes in the population as argument and produces an adjacency matrix (genetic similarities). Uses internally computeSimilarity() method. 
+
+###### SpTracker.java ######
+
+countSp() /* Counts the number of species of a population passed as argument. The algorithm follows the description of species identification given in the main text.
+removeIds() /* Private auxiliary method to reduce the size of the matrix returned by countSp() to the number of species.
