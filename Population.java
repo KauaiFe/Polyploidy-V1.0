@@ -1,4 +1,4 @@
-package speciesmodel;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
