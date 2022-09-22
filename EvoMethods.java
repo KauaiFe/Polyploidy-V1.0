@@ -1,4 +1,3 @@
-package speciesmodel;
 
 import java.util.*;
 
