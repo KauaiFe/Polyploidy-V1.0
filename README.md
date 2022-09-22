@@ -1,11 +1,10 @@
 
-Authors: Felipe Kauai, Frederik Mortier, Silvija Milosavljevic, Yves Van de Peer, Dries Bonte
 
 Ghent, Belgium, 2022
 
 Language: Java
 
-The implementation is provided.
+The implementation used in the research article "Polyploid establishment and evolution: Understanding the eco-evolutionary dynamics of mixed-ploidy systems" is provided.
 
 The source code include four classes: Main.java, EvoMethods.java, Population.java and SpTracker.java
 
